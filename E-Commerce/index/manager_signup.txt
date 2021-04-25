@@ -1,0 +1,1 @@
+{"firstName":"m1","lastName":"m1","email":"m1@gmail.com","password":"2","address":"Dhaka, Bangladesh","phone":"01625100957","dob":"2021-03-29","gender":"Male","managerType":"Technology","salary":"2121","userType":2}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+		
+		function submit() {
+
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+
+			if(username == "" || password == "") {
+				document.getElementById("p1").innerHTML = "Fill up the form properly";
+				document.getElementById("p1").style.color = "red";
+			}
+
+			else {
+
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if(this.readyState == 4 && this.status == 200) {
+						document.getElementById("p1").innerHTML = xhttp.responseText;
+						document.getElementById("p1").style.color = "green";
+					}
+				}
+
+				xhttp.open("POST", ".php", true);
+				xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				xhttp.send("username="+username+"&password="+password);
+			}
+		}
+</script>
+    <title>Chatbox</title>
+
+    <style>
+        body{
+    margin:0;
+    overflow:hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#messages{
+    height:88vh ;
+    overflow:hidden ;
+    padding: 10px;
+    background-image:url(bg.png) ;
+}
+form{
+    display: flex;
+
+}
+input{
+    font-size: 1.2rem;
+    padding: 10px ;
+    margin: 10px 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+#message{
+    flex: 2
+}
+
+
+    </style>
+</head>
+<body>
+    <div id= "messages">
+    
+    <label value></label>
+    <input type="text" id="message" placeholder="type message...">
+    <button type="submit" value="Send" onclick="submit()"></button>
+   
+    </div>
+</body>
+</html>

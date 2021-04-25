@@ -1,0 +1,47 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+
+
+.button1{
+    background-color:wheat;
+    border: none;
+    color: black;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 12px 33px;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    right:150px;
+}
+
+.button2{
+    background-color:wheat;
+    border: none;
+    color: black;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 33px;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    right:15px;
+}
+
+

@@ -1,0 +1,6 @@
+{"pname":"Mobile","pprice":"500","ptype":"Technology","pvendor":"hunterxhunter@gmail.com"}
+{"pname":"Laptop","pprice":"40000","ptype":"Technology","pvendor":"hunterxhunter@gmail.com"}
+{"pname":"Medicine","pprice":"100","ptype":"Health","pvendor":"johndoe@gmail.com"}
+{"pname":"Napa","pprice":"20","ptype":"Health","pvendor":"johndoe@gmail.com"}
+{"pname":"Lotion","pprice":"200","ptype":"Beauty","pvendor":"abc@gmail.com"}
+{"pname":"Comb","pprice":"50","ptype":"Beauty","pvendor":"abc@gmail.com"}

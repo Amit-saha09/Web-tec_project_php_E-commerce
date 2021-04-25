@@ -1,0 +1,18 @@
+body{
+    margin:0;
+    overflow:hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#messages{
+    height:88vh ;
+    overflow:hidden ;
+    display: flex;
+    font-size: 1.2rem;
+    padding: 10px;
+    background-image:url(bg.png) ;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
